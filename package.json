@@ -1,12 +1,12 @@
 {
-  "name": "ts-ioc-prueba2",
+  "name": "node-typescript-dependency-injection",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Ejemplo básico de implementación de inyección de dependencias con Typescript mediante la librería inversify.",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && node -r dotenv/config build/index.js"
   },
-  "author": "",
+  "author": "Davemour",
   "license": "ISC",
   "dependencies": {
     "inversify": "5.0.1",
@@ -14,6 +14,8 @@
   },
   "devDependencies": {
     "@types/node": "^14.11.2",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
     "tsc": "^1.20150623.0",
     "typescript": "^4.0.3"
   }
